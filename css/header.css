@@ -1,0 +1,114 @@
+/* 
+   Styles for website: Artemai  
+   Autor: Juan José Martínez Águila
+   Date: 06/09/2023
+*/
+
+/* Styles reset */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Default styles */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #F5DEB3;
+    border-bottom: #808080 solid 2px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+header nav a{
+    padding: 20px;
+    font-size: large;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.submenu li a{
+    color: #808080;
+}
+
+.border_ofmenu{
+    border-bottom: 5px solid transparent;
+    color: black;
+    transition: border-color 0.3s;
+}
+
+.border_ofmenu:hover{
+    border-color: black;
+}
+
+.submenu {
+    position: relative; /* Posición relativa para crear un contexto de posicionamiento */
+    z-index: 10;
+}
+
+.submenu-content { 
+    display: none;
+    position: absolute;
+    background-color: #F5DEB3;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+    opacity: 1;
+}
+
+.submenu:hover .submenu-content a{
+    transition: transform 0.3s, color 0.3s;
+}
+
+.submenu:hover .submenu-content a:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.header_imgcontainer{
+    height: 100px;
+    width: 160px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.header_imgcontainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.header_imgcontainer:hover{
+    transform: scale(1.1);
+}

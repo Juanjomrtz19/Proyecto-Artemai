@@ -1,0 +1,148 @@
+/* 
+   Styles for website: Artemai  
+   Autor: Juan José Martínez Águila
+   Date: 06/09/2023
+*/
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.main_presentation{
+    padding: 40px;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #F5DEB3, #FFFFFF);
+}
+
+.main_slidercontainer{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 500px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.video{
+    max-width: 800px; 
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale:  25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.video{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show; 
+}
+
+.main_materiales{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #FFFFFF, black);
+}
+
+.main_materiales h2{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.main_materialsgrid{
+    display: grid;
+    background-size: cover;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    padding: 20px;
+}
+
+
+
+.material{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.material span{
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: red;
+}
+
+.material button{
+    opacity: 0;
+    border: none;
+    padding: 10px;
+    background-color: #FFFFFF80;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.material:hover button{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.material:hover span{
+    opacity: 1;
+    
+}
