@@ -1,12 +1,12 @@
 <header>
     <section class="header_imgcontainer">
-        <a href="http://localhost/artemaidelapiedra/">
+        <a href="./index.php">
             <img src="./img/logo.png" alt="">
         </a>
     </section>
     <nav>
         <ul class="menu">    
-            <li><a href="" class="border_ofmenu">Materiales</a></li>
+            <li><a href="./materials.php" class="border_ofmenu">Materiales</a></li>
             <li class="submenu">
                 <a href="" class="border_ofmenu">Conócenos</a>
                 <ul class="submenu-content">
@@ -31,5 +31,11 @@
             </li>
             <li><a href="" class="border_ofmenu">Contáctanos</a></li>
         </ul>
+
+        <article class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </article>
+
     </nav>
+    <script src="../js/menu.js"></script>
 </header>

@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Artemai de la piedra S.L.</title>
-        <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <?php require_once("./generalFiles/head.php")?>
         <link rel="stylesheet" type="text/css" href="./css/index.css">
-        <link rel="stylesheet" type="text/css" href="./css/footer.css">
-        <script src="https://kit.fontawesome.com/eee8b9a576.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <?php require_once("./generalFiles/header.php");?>
@@ -27,6 +24,15 @@
             
             <section class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed//AzRFD4ymIBo" frameborder="0" allowfullscreen></iframe>
+            </section>
+            
+            <section class="text-phone">
+                    <p>
+                        Artemai se encarga de crear productos con piedra de manera artesanal con más de 30 años de experienza. </br>
+                    </p>
+                    <p>
+                    Si está interesado en decorar su casa o zona de confort en este sitio web podrás echar un vistazo a todo lo que hacemos. </br>
+                    </p>
             </section>
 
             <section class="main_materiales">
@@ -61,5 +67,6 @@
         </main>
         <?php require_once("./generalFiles/footer.php");?>
         <script src="./js/index.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

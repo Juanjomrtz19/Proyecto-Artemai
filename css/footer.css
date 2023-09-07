@@ -43,9 +43,11 @@ footer section a:hover{
 }
 
 
-@media (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     footer {
-        grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+        grid-template-columns: 1fr; 
         padding-top: 2em;
+        font-size: 30px;
     }
 }
+

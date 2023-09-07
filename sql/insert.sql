@@ -1,0 +1,12 @@
+INSERT INTO material(name, url) VALUES('Amarillo triana', 'amarillo_triana.jpeg');
+INSERT INTO material(name, url) VALUES('Arenisca', 'arenisca.jpeg');
+INSERT INTO material(name, url) VALUES('Mármol blanco Macael', 'blanco_macael.jpeg');
+INSERT INTO material(name, url) VALUES('Crema marfil', 'crema_marfil.jpeg');
+INSERT INTO material(name, url) VALUES('Crema moca', 'crema_moca.jpeg');
+INSERT INTO material(name, url) VALUES('Marrón emperador', 'marron_emperador.jpeg');
+INSERT INTO material(name, url) VALUES('Negro calatorio', 'negro_calatorio.jpeg');
+INSERT INTO material(name, url) VALUES('Negro marquina', 'negro_marquina.jpeg');
+INSERT INTO material(name, url) VALUES('Rojo alicante', 'rojo_alicante.jpeg');
+INSERT INTO material(name, url) VALUES('Rosa portugues', 'rosa_portugues.jpeg');
+INSERT INTO material(name, url) VALUES('Sierra elvira', 'sierra_elvira.jpeg');
+INSERT INTO material(name, url) VALUES('Travertino', 'travertino.jpeg');

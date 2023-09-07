@@ -26,6 +26,7 @@ header{
     align-items: center;
     background-color: #F5DEB3;
     border-bottom: #808080 solid 2px;
+    z-index: 15;
 }
 
 header nav{
@@ -38,6 +39,13 @@ header nav a{
     padding: 20px;
     font-size: large;
     text-decoration: none;
+}
+
+.menu-toggle{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
 }
 
 .menu{
@@ -72,7 +80,7 @@ header nav a{
 
 .submenu {
     position: relative; /* Posición relativa para crear un contexto de posicionamiento */
-    z-index: 10;
+    z-index: 30;
 }
 
 .submenu-content { 
@@ -111,4 +119,36 @@ header nav a{
 
 .header_imgcontainer:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        top: 142px;
+        left: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+        transform: translateX(-100%);
+    }
+
+    .submenu-content{
+        display:none;
+    }
+
+    .submenu:hover .submenu-content{
+        display: none;
+    }
+
+    .menu.active{
+        transform:translateX(0);
+    }
 }
