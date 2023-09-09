@@ -5,10 +5,10 @@ $database = "artemaidelapiedra";
 $username = "artemai";
 $password = "artemai";
 
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if(!$conn){
-    die("Connection failed: " . mysqli_connect_error());
+try{
+    $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+} catch(PDOException $e){
+    die("PDO Conection Error: " . $e->getMessage());
 }
 
 ?>

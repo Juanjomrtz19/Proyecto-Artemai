@@ -29,6 +29,12 @@ header{
     z-index: 15;
 }
 
+.username{
+font-weight: bolder;
+    padding-left: 100px;
+    width: 200px;
+}
+
 header nav{
     width: 100%;
     display: flex;

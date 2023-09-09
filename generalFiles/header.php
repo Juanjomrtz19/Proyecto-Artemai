@@ -1,9 +1,20 @@
+<?php 
+    session_start();
+?> 
+
 <header>
     <section class="header_imgcontainer">
         <a href="./index.php">
             <img src="./img/logo.png" alt="">
         </a>
     </section>
+
+    <?php if(isset($_SESSION["usuario"])):?>
+        <section class="username">
+            <p>Bienvenido <?php echo $_SESSION["usuario"]["name"] ?></p>
+        </section>
+    <?php endif;?>    
+
     <nav>
         <ul class="menu">    
             <li><a href="./materials.php" class="border_ofmenu">Materiales</a></li>
@@ -30,6 +41,9 @@
                 </ul>
             </li>
             <li><a href="" class="border_ofmenu">Contáctanos</a></li>
+            <?php if(isset($_SESSION["usuario"])): ?>
+                <li><a href="./generalFiles/logout.php" class="border_ofmenu">Cerrar sesión</a></li>
+            <?php endif; ?>
         </ul>
 
         <article class="menu-toggle">
