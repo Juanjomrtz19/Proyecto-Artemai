@@ -19,6 +19,17 @@ $materials = $conn->query($sql);
 
         <main>
             <section class="main_materialsgrid">
+
+                <?php if(isset($_SESSION["usuario"])): ?>
+                    <a href="addmaterial.php">
+
+                        <article class="material addmaterial" style="background: #00000080">
+                            <img src="./img/addsign.png">
+                        </article>
+
+                    </a>
+                <?php endif; ?>
+
                 <?php foreach($materials as $material): ?>
                     <article class="material" style="background-image: url('./img/img_landing/materiales/<?php echo $material["url"]; ?>');">
                         <h3> <?php echo $material["name"]; ?></h3>

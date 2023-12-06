@@ -21,6 +21,7 @@
         return $array;
     }
 
+    #Check the password
     function checkPassword($password1, $statement){
         $check = FALSE;
         $row = $statement->fetch(PDO::FETCH_ASSOC);
@@ -37,6 +38,7 @@
 
     }
 
+    //Insert a new user into the database
     function insertUser($name, $password, $conn){
         $sql = "INSERT INTO usuario VALUES(:name, :password)";
         $statement = $conn->prepare($sql);
@@ -50,6 +52,13 @@
 
         else{
             echo "Failed insert";
+        }
+    }
+
+    //Check if there is a session
+    function checkSession(){
+        if(!isset($_SESSION["usuario"])){
+            header("Location: index.php");
         }
     }
 ?>

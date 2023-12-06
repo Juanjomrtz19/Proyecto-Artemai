@@ -9,3 +9,6 @@ CREATE TABLE usuario(
     password VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE trabajo(
+    
+)

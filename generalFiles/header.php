@@ -26,7 +26,7 @@
                 </ul>    
             </li>    
             <li class="submenu">
-                <a href="" class="border_ofmenu">Trabajos</a>
+                <a href="./trabajos.php" class="border_ofmenu">Trabajos</a>
                 <ul class="submenu-content">
                     <li><a href="">Fuentes</a></li>
                     <li><a href="">Chimeneas</a></li>
